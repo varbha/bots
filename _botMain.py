@@ -2,7 +2,7 @@ from gidgetlab.aiohttp import GitLabBot
 import json
 import urllib.parse
 
-bot = GitLabBot("xpt-bot", access_token="eNFy24zkwtq1MpUxD6am")
+bot = GitLabBot("xpt-bot", access_token="")
 
 async def createIssueGreeting(gl, event):
     """create marksdown whenever MR is created"""
