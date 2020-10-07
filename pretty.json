@@ -1,0 +1,116 @@
+{
+    "data": {
+      "object_kind": "issue",
+      "event_type": "issue",
+      "user": {
+        "name": "Varun Bhatia",
+        "username": "varbha",
+        "avatar_url": "https://secure.gravatar.com/avatar/f2a0a4beda03ecfaa11a551b99947eb1?s=80&d=identicon",
+        "email": "varunbhatia.nmims@gmail.com"
+      },
+      "project": {
+        "id": 19401976,
+        "name": "XFES",
+        "description": "",
+        "web_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+        "avatar_url": null,
+        "git_ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "git_http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "namespace": "A20-XFES-0002",
+        "visibility_level": 0,
+        "path_with_namespace": "xfes/projects/20200817/a20-xfes-0002/xfes",
+        "default_branch": "master",
+        "ci_config_path": "",
+        "homepage": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+        "url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git"
+      },
+      "object_attributes": {
+        "author_id": 5433004,
+        "closed_at": null,
+        "confidential": false,
+        "created_at": "2020-10-07 09:37:58 UTC",
+        "description": "",
+        "discussion_locked": null,
+        "due_date": null,
+        "id": 72307659,
+        "iid": 18,
+        "last_edited_at": null,
+        "last_edited_by_id": null,
+        "milestone_id": null,
+        "moved_to_id": null,
+        "duplicated_to_id": null,
+        "project_id": 19401976,
+        "relative_position": null,
+        "state_id": 1,
+        "time_estimate": 0,
+        "title": "issue 17",
+        "updated_at": "2020-10-07 09:37:58 UTC",
+        "updated_by_id": null,
+        "weight": null,
+        "url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes/-/issues/18",
+        "total_time_spent": 0,
+        "human_total_time_spent": null,
+        "human_time_estimate": null,
+        "assignee_ids": [
+          5433004
+        ],
+        "assignee_id": 5433004,
+        "labels": [],
+        "state": "opened",
+        "action": "open"
+      },
+      "labels": [],
+      "changes": {
+        "author_id": {
+          "previous": null,
+          "current": 5433004
+        },
+        "created_at": {
+          "previous": null,
+          "current": "2020-10-07 09:37:58 UTC"
+        },
+        "description": {
+          "previous": null,
+          "current": ""
+        },
+        "id": {
+          "previous": null,
+          "current": 72307659
+        },
+        "iid": {
+          "previous": null,
+          "current": 18
+        },
+        "project_id": {
+          "previous": null,
+          "current": 19401976
+        },
+        "title": {
+          "previous": null,
+          "current": "issue 17"
+        },
+        "updated_at": {
+          "previous": null,
+          "current": "2020-10-07 09:37:58 UTC"
+        }
+      },
+      "repository": {
+        "name": "XFES",
+        "url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "description": "",
+        "homepage": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes"
+      },
+      "assignees": [
+        {
+          "name": "Varun Bhatia",
+          "username": "varbha",
+          "avatar_url": "https://secure.gravatar.com/avatar/f2a0a4beda03ecfaa11a551b99947eb1?s=80&d=identicon",
+          "email": "varunbhatia.nmims@gmail.com"
+        }
+      ]
+    },
+    "event": "Issue Hook",
+    "secret": null
+  }

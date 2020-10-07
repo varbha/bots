@@ -1,0 +1,185 @@
+{
+    "data": {
+      "object_kind": "merge_request",
+      "event_type": "merge_request",
+      "user": {
+        "name": "Varun Bhatia",
+        "username": "varbha",
+        "avatar_url": "https://secure.gravatar.com/avatar/f2a0a4beda03ecfaa11a551b99947eb1?s=80&d=identicon",
+        "email": "varunbhatia.nmims@gmail.com"
+      },
+      "project": {
+        "id": 19401976,
+        "name": "XFES",
+        "description": "",
+        "web_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+        "avatar_url": null,
+        "git_ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "git_http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "namespace": "A20-XFES-0002",
+        "visibility_level": 0,
+        "path_with_namespace": "xfes/projects/20200817/a20-xfes-0002/xfes",
+        "default_branch": "master",
+        "ci_config_path": "",
+        "homepage": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+        "url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git"
+      },
+      "object_attributes": {
+        "assignee_id": 5433004,
+        "author_id": 5433004,
+        "created_at": "2020-10-07 12:43:02 UTC",
+        "description": "",
+        "head_pipeline_id": null,
+        "id": 73568529,
+        "iid": 1,
+        "last_edited_at": null,
+        "last_edited_by_id": null,
+        "merge_commit_sha": null,
+        "merge_error": null,
+        "merge_params": {
+          "force_remove_source_branch": "1"
+        },
+        "merge_status": "unchecked",
+        "merge_user_id": null,
+        "merge_when_pipeline_succeeds": false,
+        "milestone_id": null,
+        "source_branch": "bot-connection-testing",
+        "source_project_id": 19401976,
+        "state_id": 1,
+        "target_branch": "master",
+        "target_project_id": 19401976,
+        "time_estimate": 0,
+        "title": "SAMPLE MR 1",
+        "updated_at": "2020-10-07 12:43:02 UTC",
+        "updated_by_id": null,
+        "url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes/-/merge_requests/1",
+        "source": {
+          "id": 19401976,
+          "name": "XFES",
+          "description": "",
+          "web_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+          "avatar_url": null,
+          "git_ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "git_http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "namespace": "A20-XFES-0002",
+          "visibility_level": 0,
+          "path_with_namespace": "xfes/projects/20200817/a20-xfes-0002/xfes",
+          "default_branch": "master",
+          "ci_config_path": "",
+          "homepage": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+          "url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git"
+        },
+        "target": {
+          "id": 19401976,
+          "name": "XFES",
+          "description": "",
+          "web_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+          "avatar_url": null,
+          "git_ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "git_http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "namespace": "A20-XFES-0002",
+          "visibility_level": 0,
+          "path_with_namespace": "xfes/projects/20200817/a20-xfes-0002/xfes",
+          "default_branch": "master",
+          "ci_config_path": "",
+          "homepage": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes",
+          "url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "ssh_url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+          "http_url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git"
+        },
+        "last_commit": {
+          "id": "3da4a31d4ff43ef424761e322a45972ff8c7d337",
+          "message": "Update file_in_fork_repo",
+          "title": "Update file_in_fork_repo",
+          "timestamp": "2020-06-22T07:23:35+00:00",
+          "url": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes/-/commit/3da4a31d4ff43ef424761e322a45972ff8c7d337",
+          "author": {
+            "name": "Taeho Kim",
+            "email": "kimdogg911@gmail.com"
+          }
+        },
+        "work_in_progress": false,
+        "total_time_spent": 0,
+        "human_total_time_spent": null,
+        "human_time_estimate": null,
+        "assignee_ids": [
+          5433004
+        ],
+        "state": "opened",
+        "action": "open"
+      },
+      "labels": [],
+      "changes": {
+        "author_id": {
+          "previous": null,
+          "current": 5433004
+        },
+        "created_at": {
+          "previous": null,
+          "current": "2020-10-07 12:43:02 UTC"
+        },
+        "description": {
+          "previous": null,
+          "current": ""
+        },
+        "id": {
+          "previous": null,
+          "current": 73568529
+        },
+        "iid": {
+          "previous": null,
+          "current": 1
+        },
+        "merge_params": {
+          "previous": {},
+          "current": {
+            "force_remove_source_branch": "1"
+          }
+        },
+        "source_branch": {
+          "previous": null,
+          "current": "bot-connection-testing"
+        },
+        "source_project_id": {
+          "previous": null,
+          "current": 19401976
+        },
+        "target_branch": {
+          "previous": null,
+          "current": "master"
+        },
+        "target_project_id": {
+          "previous": null,
+          "current": 19401976
+        },
+        "title": {
+          "previous": null,
+          "current": "SAMPLE MR 1"
+        },
+        "updated_at": {
+          "previous": null,
+          "current": "2020-10-07 12:43:02 UTC"
+        }
+      },
+      "repository": {
+        "name": "XFES",
+        "url": "git@gitlab.com:xfes/projects/20200817/a20-xfes-0002/xfes.git",
+        "description": "",
+        "homepage": "https://gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes"
+      },
+      "assignees": [
+        {
+          "name": "Varun Bhatia",
+          "username": "varbha",
+          "avatar_url": "https://secure.gravatar.com/avatar/f2a0a4beda03ecfaa11a551b99947eb1?s=80&d=identicon",
+          "email": "varunbhatia.nmims@gmail.com"
+        }
+      ]
+    },
+    "event": "Merge Request Hook",
+    "secret": null
+  }

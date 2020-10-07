@@ -1,0 +1,16 @@
+# MR [ autotools --> master ]
+
+## Basic Information
+
+- Project developer: Taeho
+- EL: Takemura
+- PL: Varun
+- release date : 20200901
+- base tag : mockv1.0.0
+
+## Additional Information
+
+1. [ ] Openshift artifact
+2. [x] Maven artifact
+3. [x] Maven artifact
+
