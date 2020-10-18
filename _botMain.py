@@ -12,7 +12,7 @@ from gidgetlab.aiohttp import GitLabBot
 import json
 import urllib.parse
 
-bot = GitLabBot("xpt-bot", access_token="")
+bot = GitLabBot("xpt-bot")
 
 async def checkOrCreateLabels(gl, event):
     """check if project labels exist, and create new labels if they dont exist"""
