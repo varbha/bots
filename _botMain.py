@@ -98,12 +98,12 @@ async def createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clon
     # add git credentials to clone url
     gitlab_clone_url = gitlab_clone_url.replace("https://", "https://$GITUSER:$GITPASS@")
     # add namespace folder name
-    namespace = path_with_namespace[path_with_namespace.rindex('/'):]
+    namespace = path_with_namespace[path_with_namespace.rindex('/') + 1:]
     print(namespace)
     print(gitlab_clone_url)
 
     commandString = f"./create_markdown.sh {gitlab_clone_url} {namespace} {target_branch} {source_branch}"
-    subprocess.call(['sh', commandString])
+    subprocess.call(['sh', './create_markdown.sh', gitlab_clone_url, namespace, target_branch, source_branch])
     with open("markdown-linux.txt", 'r') as file:
         line = file.read()
     
