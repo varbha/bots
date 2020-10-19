@@ -5,12 +5,16 @@
 ## create Note Hook logic for [/command] execution
 ## add list of avaliable [/command] (s) availaible for that page in greeting
 ## integrate shell scripts instead of dummy data 
+## MR - action = opened, reopen, close
 
 # TODO-BUGS
+## Commit update on MR causes the creation of new Issue
 
 from gidgetlab.aiohttp import GitLabBot
 import json
 import urllib.parse
+import os
+import subprocess
 
 bot = GitLabBot("xpt-bot")
 
@@ -75,13 +79,40 @@ async def createMarkdown(gl, event):
 
 async def createMarkdownForMergeRequest(gl, event, project_id, gitlab_clone_url, namespace, source_branch, target_branch, merge_iid, merge_error, path_with_namespace):
     """create markdown whenever MR is created"""
+
+    if os.name != 'nt' :
+        await createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clone_url, namespace, source_branch, target_branch, merge_iid, merge_error, path_with_namespace)
+    else:
+        # fileToShellFile = os.chdir(os.getcwd() + '\/helpers')
+        with open("markdown.txt", 'r') as file:
+            line = file.read()
+
+        url = f"/projects/{event.project_id}/merge_requests/{merge_iid}/notes"
+        message = line
+
+        await gl.post(url, data={"body": message})
+
+async def createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clone_url, namespace, source_branch, target_branch, merge_iid, merge_error, path_with_namespace):
+    """create markdown whenever MR is created (if application is running in an linux environment)"""
+    
+    # add git credentials to clone url
+    gitlab_clone_url = gitlab_clone_url.replace("https://", "https://$GITUSER:$GITPASS@")
+    # add namespace folder name
+    namespace = path_with_namespace[path_with_namespace.rindex('/'):]
+    print(namespace)
+    print(gitlab_clone_url)
+
+    commandString = f"./create_markdown.sh {gitlab_clone_url} {namespace} {target_branch} {source_branch}"
+    subprocess.call(['sh', commandString])
     with open("markdown.txt", 'r') as file:
         line = file.read()
-
+    
     url = f"/projects/{event.project_id}/merge_requests/{merge_iid}/notes"
     message = line
 
     await gl.post(url, data={"body": message})
+
+
 
 async def createMarkdownDescription(gl, event):
     """create marksdown whenever MR is created"""
@@ -172,7 +203,7 @@ async def merge_request_created_event(event, gl, *args, **kwargs):
     await createNewIssue(gl, event, jsonStr, project_id, namespace, merge_iid, source_branch, path_with_namespace )
     
     '''create greeting for MR'''
-    await createMergeRequestGreeting(gl,event, jsonStr)
+    await createMergeRequestGreeting(gl,event, jsonStr) 
 
     await createMarkdownForMergeRequest(gl, event, project_id, gitlab_clone_url, namespace, source_branch, target_branch, merge_iid, merge_error, path_with_namespace )
 
