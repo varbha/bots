@@ -9,5 +9,6 @@ RUN apt-get install git
 
 
 COPY . .
+RUN chmod -R 777 /usr/src/app
 
 CMD [ "python", "./_botMain.py" ]
