@@ -6,7 +6,7 @@ mkdir clone_url_repo
 
 cd clone_url_repo
 
-git clone $1
+git clone https://varbha:asvst124GHz@gitlab.com/xfes/projects/20200817/a20-xfes-0002/xfes.git/
 
 cd $2
 
