@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd usr/src/app
+cd /usr/src/app
 
 mkdir clone_url_repo
 
