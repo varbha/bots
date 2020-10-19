@@ -104,7 +104,7 @@ async def createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clon
 
     commandString = f"./create_markdown.sh {gitlab_clone_url} {namespace} {target_branch} {source_branch}"
     subprocess.call(['sh', commandString])
-    with open("markdown.txt", 'r') as file:
+    with open("markdown-linux.txt", 'r') as file:
         line = file.read()
     
     url = f"/projects/{event.project_id}/merge_requests/{merge_iid}/notes"
