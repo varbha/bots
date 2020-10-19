@@ -10,7 +10,7 @@ git clone $1
 
 cd $2
 
-git diff --name-status origin/$4 origin/$3 > /usr/src/app/markdown.txt
+git diff --name-status origin/$4 origin/$3 > /usr/src/app/markdown-linux.txt
 
 cd /usr/src/app 
 
