@@ -1,11 +1,12 @@
 # TODO
 ## create issue hook for action = updated [ for label change ]
 ## ePMS connection and design/implementation discussion
-## create logic for diplaying greeting/diff/base tag when MR is created
-## create Note Hook logic for [/command] execution
 ## add list of avaliable [/command] (s) availaible for that page in greeting
 ## integrate shell scripts instead of dummy data 
 ## MR - action = opened, reopen, close
+## change labels as per decided git workflow
+## create issue board when MR is created
+## put greetings into another file
 
 # TODO-BUGS
 ## Commit update on MR causes the creation of new Issue
@@ -15,6 +16,7 @@ import json
 import urllib.parse
 import os
 import subprocess
+import time
 
 bot = GitLabBot("xpt-bot")
 
@@ -102,8 +104,12 @@ async def createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clon
     print(namespace)
     print(gitlab_clone_url)
 
-    commandString = f"./create_markdown.sh {gitlab_clone_url} {namespace} {target_branch} {source_branch}"
-    subprocess.call(['sh', './create_markdown.sh', gitlab_clone_url, namespace, target_branch, source_branch])
+    ts = time.gmtime()
+    now = time.strftime("%Y%m%d%H%M%S", ts)
+    # commandString = f"./create_markdown.sh {gitlab_clone_url} {namespace} {target_branch} {source_branch} {now}"
+    subprocess.call(['sh', './mr_maker.sh', gitlab_clone_url, namespace, target_branch, source_branch, now])
+    
+    # file at /usr/src/app
     with open("markdown-linux.txt", 'r') as file:
         line = file.read()
     
