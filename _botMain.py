@@ -98,10 +98,11 @@ async def createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clon
     """create markdown whenever MR is created (if application is running in an linux environment)"""
     
     # add git credentials to clone url
-    gitlab_clone_url = gitlab_clone_url.replace("https://", "https://$GITUSER:$GITPASS@")
+    replacementString =  'https://' + os.environ.get('GIT_USER') + ':' + os.environ.get('GIT_PASS') + '@'
+    gitlab_clone_url = gitlab_clone_url.replace("https://", replacementString)
     # add namespace folder name
     namespace = path_with_namespace[path_with_namespace.rindex('/') + 1:]
-    print(namespace)
+    print("Namespace : " + namespace)
     print(gitlab_clone_url)
 
     ts = time.gmtime()
