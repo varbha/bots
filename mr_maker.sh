@@ -109,5 +109,5 @@ echo -e "## Additional Information\n" >> $markdownFile
 echo -e "## Diff [ $baseTag ~ $sourceBranch ]\n" >> $markdownFile
 echo -e "$diffTableWithBase" >> $markdownFile
 
-read -p "Press any key to exit"
+
 rm -r $workdir
