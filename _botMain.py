@@ -108,7 +108,7 @@ async def createMarkdownForMergeRequest_linux(gl, event, project_id, gitlab_clon
     ts = time.gmtime()
     now = time.strftime("%Y%m%d%H%M%S", ts)
     # commandString = f"./create_markdown.sh {gitlab_clone_url} {namespace} {target_branch} {source_branch} {now}"
-    subprocess.call(['sh', './mr_maker.sh', gitlab_clone_url, namespace, target_branch, source_branch, now])
+    subprocess.call(['bash', './mr_maker.sh', gitlab_clone_url, namespace, target_branch, source_branch, now])
     
     # file at /usr/src/app
     with open("markdown-linux.txt", 'r') as file:
